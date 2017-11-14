@@ -8,41 +8,30 @@
     font-weight: bold;
 }
 
-.navbar-brand a{ color: black;}
+.navbar-brand a {color: black;}
 
-a:hover{ color: lightblue;
+a:hover { color: lightblue;
 text-decoration: none;}
 
-
-
-
-
 img:hover{
-
         filter: saturate(15%)
-      }
-.vcenter
-
-{
+    }
+.vcenter {
     display: flex;
     justify-content: center;
     align-items: center;
-    }
-
-    footer
-    {
-      
-        opacity: 0.7;
-        margin-top: 50px;
+}
+footer {
+    opacity: 0.7;
+    margin-top: 50px;
     margin-bottom:10px;
-position:relative;}
-
+    position:relative;
+}
 .row {
     position: relative;
 }
-
 .align-bottom {
-  position: absolute;
-  bottom: 0;
-  right: 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
