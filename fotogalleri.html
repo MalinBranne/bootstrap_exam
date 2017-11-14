@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Photo Gallery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script>
+        $(document).ready(function() {
+            /* show lightbox when clicking a thumbnail */
+            $('a.thumb').click(function(event){
+                event.preventDefault();
+                var content = $('.modal-body');
+                content.empty();
+                var title = $(this).attr("title");
+                $('.modal-title').html(title);      	
+                content.html($(this).html());
+                $(".modal-profile").modal({show:true});
+            });
+        });
+    </script>
+</head>
+<body>
+
+<div class="container-fluid">
+    <div class="content text-center">
+        <h1 class="h1special">Photo Gallery</h1>
+        <hr>
+    </div>
+
+    <div class="container">
+        <div class="row"> <!-- row 1 -->
+            <!-- First row, 4 items -->
+            <div class="col-xs-12 col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-thumbnail">
+                        <a href="#" title="Nature Photo 1" class="thumb">
+                            <img src="images/nature1.jpg" alt="A picture of Nature" class="img-responsive" data-toggle="modal" data-target=".modal-profile-lg">
+                        </a>
+                    </div>
+                    <div class="panel-body">
+                        <p class="profile-name">An Image of Nature, 1</p>
+                        <p>This image was taken with a camera.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-thumbnail">
+                        <a href="#" title="Pet Photo 2" class="thumb">
+                            <img src="images/pet3.jpg" alt="A picture of Pet" class="img-responsive" data-toggle="modal" data-target=".modal-profile-lg">
+                        </a>
+                    </div>
+                    <div class="panel-body">
+                        <p class="profile-name">An Image of Pet, 3</p>
+                        <p>This image was taken with a camera.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-thumbnail">
+                        <a href="#" title="Nature Photo 3" class="thumb">
+                            <img src="images/nature3.jpg" alt="A picture of Nature" class="img-responsive" data-toggle="modal" data-target=".modal-profile-lg">
+                        </a>
+                    </div>
+                    <div class="panel-body">
+                        <p class="profile-name">An Image of Nature, 3</p>
+                        <p>This image was taken with a camera.</p>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- row -->
+        <div class="row">
+            <!-- row 2 -->
+            <div class="col-xs-12 col-md-6">
+                <div class="panel panel-default">
+                    <div class="panel-thumbnail">
+                        <a href="#" class="thumb">
+                            <img src="images/wedding1.jpg" alt="A wedding photography" class="img-responsive">
+                        </a>
+                    </div>
+                    <div class="panel-body">
+                        <p class="profile-name">A Wedding Image, 1</p>
+                        <p>This image was taken with a camera.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <div class="panel panel-default">
+                    <div class="panel-thumbnail">
+                        <a href="#" title="Nature Photo 4" class="thumb">
+                            <img src="images/nature4.jpg" alt="A picture of Nature" class="img-responsive" data-toggle="modal" data-target=".modal-profile-lg">
+                        </a>
+                    </div>
+                    <div class="panel-body">
+                        <p class="profile-name">An Image of Nature, 4</p>
+                        <p>This image was taken with a camera.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!-- row 3 -->
+            <div class="col-xs-12 col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-thumbnail">
+                        <a href="#" class="thumb">
+                            <img src="images/wedding2.jpg" alt="A wedding image" class="img-responsive">
+                        </a>
+                    </div>
+                    <div class="panel-body">
+                        <p class="profile-name">Wedding, 2</p>
+                        <p>This image was taken with a camera.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-4 profile">
+                <div class="panel panel-default">
+                    <div class="panel-thumbnail">
+                        <a href="#" title="Pet 1" class="thumb">
+                            <img src="images/pet1.jpg" alt="A picture of Pet, 1" class="img-responsive" data-toggle="modal" data-target=".modal-profile-lg">
+                        </a>
+                    </div>
+                    <div class="panel-body">
+                        <p class="profile-name">An Image of Pet, 1</p>
+                        <p>This image was taken with a camera.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-4 profile">
+                <div class="row">
+                    <div class="panel panel-default">
+                        <div class="panel-thumbnail">
+                            <a href="#" title="Education 1" class="thumb">
+                                <img src="images/education1.jpg" alt="A picture of Education" class="img-responsive" data-toggle="modal" data-target=".modal-profile-lg">
+                            </a>
+                        </div>
+                        <div class="panel-body">
+                            <p class="profile-name">We offer classes, 1</p>
+                            <p>This image was taken with a camera.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="panel panel-default">
+                        <div class="panel-thumbnail">
+                            <a href="#" title="Education 2" class="thumb">
+                                <img src="images/education2.jpg" alt="A picture of Education" class="img-responsive" data-toggle="modal" data-target=".modal-profile-lg">
+                            </a>
+                        </div>
+                        <div class="panel-body">
+                            <p class="profile-name">We offer classes, 2</p>
+                            <p>This image was taken with a camera.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!-- row 4 -->
+            <div class="col-xs-12 col-md-2 profile">
+                <div class="panel panel-default">
+                    <div class="panel-thumbnail">
+                        <a href="#" title="Portrait 1" class="thumb">
+                            <img src="images/portrait1.jpg" alt="A picture of Person" class="img-responsive" data-toggle="modal" data-target=".modal-profile-lg">
+                        </a>
+                    </div>
+                    <div class="panel-body">
+                        <p class="profile-name">An Image of a Person, 1</p>
+                        <p>This image was taken with a camera.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-2 profile">
+                <div class="panel panel-default">
+                    <div class="panel-thumbnail">
+                        <a href="#" title="Pet 2" class="thumb">
+                            <img src="images/pet2.jpg" alt="A picture of Pet" class="img-responsive" data-toggle="modal" data-target=".modal-profile-lg">
+                        </a>
+                    </div>
+                    <div class="panel-body">
+                        <p class="profile-name">An Image of a Pet, 2</p>
+                        <p>This image was taken with a camera.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-2 profile">
+                <div class="panel panel-default">
+                    <div class="panel-thumbnail">
+                        <a href="#" title="Wedding 3" class="thumb">
+                            <img src="images/wedding3.jpg" alt="A picture of A Bride" class="img-responsive" data-toggle="modal" data-target=".modal-profile-lg">
+                        </a>
+                    </div>
+                    <div class="panel-body">
+                        <p class="profile-name">An Image of a Bride, 1</p>
+                        <p>This image was taken with a camera.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-2 profile">
+                <div class="panel panel-default">
+                    <div class="panel-thumbnail">
+                        <a href="#" title="Pet 6" class="thumb">
+                            <img src="images/pet6.jpg" alt="A picture of Pet" class="img-responsive" data-toggle="modal" data-target=".modal-profile-lg">
+                        </a>
+                    </div>
+                    <div class="panel-body">
+                        <p class="profile-name">An Image of a Pet, 6</p>
+                        <p>This image was taken with a camera.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-2 profile">
+                <div class="panel panel-default">
+                    <div class="panel-thumbnail">
+                        <a href="#" title="Pet 5" class="thumb">
+                            <img src="images/pet5.jpg" alt="A picture of Pet" class="img-responsive" data-toggle="modal" data-target=".modal-profile-lg">
+                        </a>
+                    </div>
+                    <div class="panel-body">
+                        <p class="profile-name">An Image of a Pet, 5</p>
+                        <p>This image was taken with a camera.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-2 profile">
+                <div class="panel panel-default">
+                    <div class="panel-thumbnail">
+                        <a href="#" title="Portrait 2" class="thumb">
+                            <img src="images/portrait2.jpg" alt="A picture of Person" class="img-responsive" data-toggle="modal" data-target=".modal-profile-lg">
+                        </a>
+                    </div>
+                    <div class="panel-body">
+                        <p class="profile-name">An Image of Person, 2</p>
+                        <p>This image was taken with a camera.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+     
+
+
+<!-- .modal-profile -->
+<div class="modal fade modal-profile" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="close" type="button" data-dismiss="modal">×</button>
+                <h3 class="modal-title"></h3>
+            </div>
+            <div class="modal-body">
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- //.modal-profile -->
+
+
+</body>
+</html>
