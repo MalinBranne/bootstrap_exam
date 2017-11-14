@@ -1,0 +1,35 @@
+Additional:
+
+1. Alla sidor ska ha breadcrumbs under navbaren. Dom ska ligga till vänster.
+
+2. I mobil läge ska allt ta upp full bredd och ligga i block.
+
+3. I mobilläge ersätts carousels med en statisk bild.
+
+4. Meny och footer kompieras from startsidan till alla andra sidor. Ändra active till aktuell sida.
+
+5. Tjänster:
+
+bröllop
+dop
+porträtt
+natur
+husdjur
+Utbildning (fotoutbildningar)
+
+
+
+
+
+
+Arbetet är uppdelat på följande:
+
+Robert: Fotogalleri och Contact
+Malin: Startsida, Alla tjänster-sida och about
+Fatme: Alla individuella tjänsters sidor (6 stycken) och blogg
+
+
+Malin är är gruppledare
+
+
+Vi kommer göra en repository på Git som vi alla kan pusha våra individuella sidor till.
