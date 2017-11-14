@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/styles.css">
 
     <script>
+        // Don't touch, it's for the gallery
         $(document).ready(function() {
             /* show lightbox when clicking a thumbnail */
             $('a.thumb').click(function(event){
@@ -29,101 +30,88 @@
        
 </head>
 <body>
-    <div class="container-fluid">
-        <nav class="navbar navbar-default">
-                <div class="container">
-                    <div class="navbar-header">
-                       
-    
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-container" aria-expanded="false">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar">
-                            </span>
-                            <span class="icon-bar">
-                            </span>
-                            <span class="icon-bar">
-                            </span>
-                        </button>
-                        <div class="navbar-brand"> <a href="index.html" class="pull-left">
-                        RMF PHOTO <i class="glyphicon glyphicon-leaf"></i> </a>
-                        </div>
-                    </div>
-                    <div class="collapse navbar-collapse" id="navbar-collapse-container">
-                        <ul class="nav navbar-nav pull-right">
-    
-                            <li>
-                                <a href="index.html">Home</a>
-                            </li>
-                            <li class="dropdown">
-                                <a class="dropdown-toggle" data-toggle="dropdown">Services
-                                    <span class="caret"></span>
-                                </a>
-    
-                                <ul class="dropdown-menu">
-                                    <div class="divider"></div>
-                                    <li>
-                                        <a href="products.html">Services</a>
-                                    </li>
-                                    <li>
-                                        <a href="brollop.html">Bröllops Foto</a>
-                                    </li>
-                                    <li>
-                                        <a href="dop.html">Dop Foto</a>
-                                    </li>
-                                    <li>
-                                    <a href="dop.html">Porträtt Foto</a>
-                                </li>
-                                    <div class="divider"></div>
-                                    <li>
-                                    <a href="dop.html">Natur Foto</a>
-                                </li>
-                                <li>
-                                <a href="djur.html">Hurdjurs Foto</a>
-                            </li>
-                            <div class="divider"></div>
-                            <li>
-                                                            <a href="utbildningar.html">Foto Utbildningar</a>
-                                                        </li>
-                                                        <div class="divider"></div>
-                                                        
-                                                                                      
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="gallery.html">Gallery</a>
-                            </li>            
-                            <li>
-                                <a href="blog.html">Blog</a>
-                            </li>
-                            <li class="active">
-                                <a href="about.html">About</a>
-                            </li>
-                            <li>
-                                <a href="contact.html">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-            <div class="container">
-            <ol class="breadcrumb">
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-container" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="navbar-brand"> <a href="index.html" class="pull-left">
+            RMF PHOTO <i class="glyphicon glyphicon-leaf"></i> </a>
+            </div>
+        </div> <!-- navbar-header -->
+        <div class="collapse navbar-collapse" id="navbar-collapse-container">
+            <ul class="nav navbar-nav pull-right">
                 <li>
-                    <a href="index.html">
-                        <span class="glyphicon glyphicon-home"></span>
-                    </a>
+                    <a href="index.html">Hem</a>
                 </li>
-                <li class="active">About</li>
-            </ol>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown">Tjänster
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <!-- <div class="divider"></div> -->
+                        <li>
+                            <a href="products.html">Alla Tjänster</a>
+                        </li>
+                        <li>
+                            <a href="brollop.html">Bröllopsfoto</a>
+                        </li>
+                        <li>
+                            <a href="dop.html">Dopfoto</a>
+                        </li>
+                        <li>
+                            <a href="dop.html">Porträttfoto</a>
+                        </li>
+                        <div class="divider"></div>
+                        <li>
+                            <a href="dop.html">Naturfoto</a>
+                        </li>
+                        <li>
+                            <a href="djur.html">Husdjursporträtt</a>
+                        </li>
+                        <div class="divider"></div>
+                        <li>
+                            <a href="utbildningar.html">Utbildningar Foto</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="gallery.html" class="active">Galleri</a>
+                </li>            
+                <li>
+                    <a href="blog.html">Blog</a>
+                </li>
+                <li class="active">
+                    <a href="about.html">Om Oss</a>
+                </li>
+                <li>
+                    <a href="contact.html">Kontakta Oss</a>
+                </li>
+            </ul>
         </div>
-        </div>
+    </div>
+</nav>
+
 <div class="container-fluid">
     <div class="content text-center">
-        <h1 class="h1special">Photo Gallery</h1>
-        <hr>
-    </div>
-
+        <h1 class="h1special">Fotogalleri</h1>
+    </div> 
     <div class="container">
-        <div class="row"> <!-- row 1 -->
+        <ol class="breadcrumb">
+            <li>
+                <a href="index.html">
+                    <span class="glyphicon glyphicon-home"></span>
+                </a>
+            </li>
+            <li class="active">Fotogalleri</li>
+        </ol>
+    </div> <!-- container -->
+    <div class="container">
+        <div class="row">
             <!-- First row, 4 items -->
             <div class="col-xs-12 col-md-4">
                 <div class="panel panel-default">
@@ -189,7 +177,6 @@
                     </div>
                     <div class="panel-body">
                         <p class="profile-name">An Image of Nature, 4</p>
-                        <p>This image was taken with a camera.</p>
                     </div>
                 </div>
             </div>
@@ -242,10 +229,6 @@
                             <a href="#" title="Education 2" class="thumb">
                                 <img src="images/education2.jpg" alt="A picture of Education" class="img-responsive" data-toggle="modal" data-target=".modal-profile-lg">
                             </a>
-                        </div>
-                        <div class="panel-body">
-                            <p class="profile-name">We offer classes, 2</p>
-                            <p>This image was taken with a camera.</p>
                         </div>
                     </div>
                 </div>
@@ -332,27 +315,31 @@
                 </div>
             </div>
         </div>
-    </div>
-</div>
-
+    </div> <!-- container, photos -->
+</div> <!-- container-fluid, wrapper for everything between h1 title and photos -->
 <footer class="col-xs-12">
     <div class="container">
-        
-        
-            <div class="col-xs-12 col-sm-6 pull-left">
-                    <p><i class="glyphicon glyphicon-user"></i> Framtidsvägen 12A | 352 57 | Växjö</p>
-                <p><i class="glyphicon glyphicon-phone"></i> 0470-72 33 00</p>
-            </div>
-            <div class="col-xs-12 col-sm-6 align-bottom" align="right">
-                   
-                            <button class="btn-primary"><i class="fa fa-facebook-square" aria-hidden="true"></i></button>
-                            <button><i class="fa fa-pinterest-square" aria-hidden="true"></i></button>
-                             <button class="btn-primary"><i class="fa fa-instagram" aria-hidden="true"></i></button>
-                            </div> <!-- buttons -->
-                        </div>
-                            </footer>
-     
-
+        <div class="col-xs-12 col-sm-6 pull-left">
+            <p>
+                <i class="glyphicon glyphicon-user"></i> Framtidsvägen 12A | 352 57 | Växjö
+            </p>
+            <p>
+                <i class="glyphicon glyphicon-phone"></i> 0470-72 33 00
+            </p>
+        </div> <!-- col-xs-12 col-sm-6 pull-left -->
+        <div class="col-xs-12 col-sm-6" align="right">
+            <button class="btn-primary">
+                <i class="fa fa-facebook-square" aria-hidden="true"></i>
+            </button>
+            <button>
+                <i class="fa fa-pinterest-square" aria-hidden="true"></i>
+            </button>
+            <button class="btn-primary">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+            </button>
+        </div> <!-- buttons -->
+    </div> <!-- container -->
+</footer>
 
 <!-- .modal-profile -->
 <div class="modal fade modal-profile" tabindex="-1" role="dialog">
@@ -368,11 +355,7 @@
                 <button class="btn btn-default" data-dismiss="modal">Close</button>
             </div>
         </div>
-
     </div>
-</div>
-<!-- //.modal-profile -->
-
-
+</div> <!-- modal-profile -->
 </body>
 </html>
