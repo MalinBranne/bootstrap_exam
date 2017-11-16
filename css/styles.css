@@ -62,7 +62,6 @@ footer {
     position:relative;
     display:flex;
 }
-
 footer p{align-content: baseline;}
 .row {
     position: relative;
@@ -72,6 +71,15 @@ footer p{align-content: baseline;}
     bottom: 0;
     right: 0;
 }
-.text{
+.text {
     padding: 20px;
+    font-size: 15px;
+}
+.posted {
+    font-size: small;
+    font-style: italic;
+    color: grey;
+}
+.quote {
+    font-size: 12px;
 }
