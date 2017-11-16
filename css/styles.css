@@ -50,8 +50,8 @@ img:hover{
 
 .index_p{
 
-    border-top: #444 solid 1px;
-    border-bottom: #444 solid 1px;
+    border-top: lightgrey solid 1px;
+    border-bottom: lightgrey solid 1px;
     padding: 20px;
     margin-top:50px;
 }
