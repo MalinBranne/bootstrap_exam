@@ -8,10 +8,24 @@
     font-weight: bold;
 }
 
+.h2special {
+    margin: 0;
+    color: #444;
+    padding: 0px 0px 6px 0px;
+
+    letter-spacing: -2px;
+    font-weight: bold;
+}
+
 .navbar-brand a {color: black;}
 
 a:hover { color: lightblue;
 text-decoration: none;}
+
+img {
+    height:70vh;
+    width: 90vh;
+}
 
 img:hover{
         filter: saturate(15%)
