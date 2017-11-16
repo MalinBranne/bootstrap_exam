@@ -26,7 +26,10 @@ footer {
     margin-top: 50px;
     margin-bottom:10px;
     position:relative;
+    display:flex;
 }
+
+footer p{align-content: baseline;}
 .row {
     position: relative;
 }
@@ -34,4 +37,7 @@ footer {
     position: absolute;
     bottom: 0;
     right: 0;
+}
+.text{
+    padding: 20px;
 }
