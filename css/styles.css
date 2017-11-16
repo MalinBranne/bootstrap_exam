@@ -17,6 +17,18 @@
     font-weight: bold;
 }
 
+.carousel-caption a {
+
+
+    margin: 0;
+    color: white;
+    padding: 0px 0px 6px 0px;
+    font-size: 20px;
+    line-height: 44px;
+    letter-spacing: -2px;
+    font-weight: bold;
+}
+
 .navbar-brand a {color: black;}
 
 a:hover { color: lightblue;
@@ -24,7 +36,7 @@ text-decoration: none;}
 
 img {
     height:70vh;
-    width: 90vh;
+    width: 100vh;
 }
 
 img:hover{
@@ -34,6 +46,14 @@ img:hover{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.index_p{
+
+    border-top: #444 solid 1px;
+    border-bottom: #444 solid 1px;
+    padding: 20px;
+    margin-top:50px;
 }
 footer {
     opacity: 0.7;
@@ -51,4 +71,7 @@ footer p{align-content: baseline;}
     position: absolute;
     bottom: 0;
     right: 0;
+}
+.text{
+    padding: 20px;
 }
