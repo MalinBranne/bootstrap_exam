@@ -63,7 +63,7 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-sm-8 col-sm-offset-2" align="center"><br>
+        <div class="col-sm-8 col-sm-offset-2 text" align="center">
             "Sed ut perspiciatis unde omnis Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
             adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
             voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
@@ -74,23 +74,44 @@
 </div>
 
 <!--Comment Section-->
+<!--Nested Media Object-->
 
-<!--Media Object-->
-<ul class="media-list">
-    <li class="media">
+<div class="container">    
+    <div class="media">
       <div class="media-left">
-        <a href="#">
-          <img class="media-object" src="..." alt="...">
-        </a>
+        <img src="img_avatar1.png" class="media-object" style="width:45px">
       </div>
       <div class="media-body">
-        <h4 class="media-heading">Media heading</h4>
-        ...
+        <h4 class="media-heading">John Doe <small><i>Posted on February 19, 2016</i></small></h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        
+        <!-- Nested media object -->
+        <div class="media">
+          <div class="media-left">
+            <img src="img_avatar2.png" class="media-object" style="width:45px">
+          </div>
+          <div class="media-body">
+            <h4 class="media-heading">John Doe <small><i>Posted on February 19, 2016</i></small></h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  
+            <!-- Nested media object -->
+            <div class="media">
+              <div class="media-left">
+                <img src="img_avatar3.png" class="media-object" style="width:45px">
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">John Doe <small><i>Posted on February 19, 2016</i></small></h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        
       </div>
-    </li>
-  </ul>
-
-
+    </div>
+  </div>
+  
 
 <!--Footer-->
 <footer class="col-xs-12">
