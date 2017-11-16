@@ -49,7 +49,6 @@ img:hover{
 }
 
 .index_p{
-
     border-top: lightgrey solid 1px;
     border-bottom: lightgrey solid 1px;
     padding: 20px;
@@ -74,6 +73,11 @@ footer p{align-content: baseline;}
 .text {
     padding: 20px;
     font-size: 15px;
+    border-top: lightgrey solid 1px;
+    border-bottom: lightgrey solid 1px;
+    padding: 20px;
+    margin-top:50px;
+    margin-bottom:50px;
 }
 .posted {
     font-size: small;
@@ -89,4 +93,8 @@ footer p{align-content: baseline;}
     text-decoration: none;
     outline: 0;
     background-color:grey; /*This does not work!*/
+}
+.blog {
+    border: 1px solid lightgrey;
+    padding: 20px;
 }
