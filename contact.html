@@ -4,13 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>RMF Photo: Om Oss</title>
+    <title>Contact Us</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-    <script src="js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/styles.css">
-    <script src="https://use.fontawesome.com/2e22900e44.js"></script>
+    <script src="https://use.fontawesome.com/2e22900e44.js "></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script>
+    $(document).ready(function() {
+        $('#formButton').on('click', function () {
+            var iSelector = $(this).find('i:first');
+            if (iSelector.hasClass('glyphicon-arrow-down')) {
+                iSelector.removeClass('glyphicon-arrow-down')
+                iSelector.addClass('glyphicon-arrow-up')
+            } else if (iSelector.hasClass('glyphicon-arrow-up')) {
+                iSelector.removeClass('glyphicon-arrow-up')
+                iSelector.addClass('glyphicon-arrow-down')
+            }
+        });
+    });
+    </script>
 </head>
 <body>
 <nav class="navbar navbar-default">
@@ -25,55 +39,30 @@
             <div class="navbar-brand"> <a href="index.html" class="pull-left">
             RMF PHOTO <i class="glyphicon glyphicon-leaf"></i> </a>
             </div>
-        </div> <!-- navbar-header -->
+        </div>
         <div class="collapse navbar-collapse" id="navbar-collapse-container">
-            <ul class="nav navbar-nav pull-right">
-                <li>
-                    <a href="index.html">Hem</a>
-                </li>
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
                 <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown">Tjänster
-                        <span class="caret"></span>
-                    </a>
+                    <a class="dropdown-toggle" data-toggle="dropdown">Services<span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <!-- <div class="divider"></div> -->
-                        <li>
-                            <a href="products.html">Alla Tjänster</a>
-                        </li>
-                        <li>
-                            <a href="brollop.html">Bröllopsfoto</a>
-                        </li>
-                        <li>
-                            <a href="dop.html">Dopfoto</a>
-                        </li>
-                        <li>
-                            <a href="dop.html">Porträttfoto</a>
-                        </li>
+                        <li><a href="products.html">All Services</a></li>
+                        <li><a href="weddings.html">Wedding Photography</a></li>
+                        <li><a href="naming.html">Naming Ceremonies</a></li>
+                        <li><a href="portraits.html">Portraiture</a></li>
                         <div class="divider"></div>
-                        <li>
-                            <a href="dop.html">Naturfoto</a>
-                        </li>
-                        <li>
-                            <a href="djur.html">Husdjursporträtt</a>
-                        </li>
+                            <li><a href="nature.html">Nature Photography</a></li>
+                            <li><a href="pets.html">Pet Photography</a></li>
                         <div class="divider"></div>
-                        <li>
-                            <a href="utbildningar.html">Utbildningar Foto</a>
-                        </li>
+                            <li><a href="educations.html">Photo Educations</a></li>
                     </ul>
                 </li>
-                <li>
-                    <a href="fotogalleri.html">Galleri</a>
-                </li>            
-                <li>
-                    <a href="blog.html">Blog</a>
-                </li>
-                <li class="active">
-                    <a href="about.html">Om Oss</a>
-                </li>
-                <li>
-                    <a href="contact.html" class="active">Kontakta Oss</a>
-                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="gallery.html">Photo Gallery</a></li>            
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="active"><a href="contact.html">Contact</a></li>
             </ul>
         </div>
     </div>
@@ -81,7 +70,7 @@
     
 <div class="container-fluid">
     <div class="content text-center">
-        <h1 class="h1special">Kontakta Oss</h1>
+        <h1 class="h1special">Contact Us</h1>
     </div> 
     <div class="container">
         <ol class="breadcrumb">
@@ -90,7 +79,7 @@
                     <span class="glyphicon glyphicon-home"></span>
                 </a>
             </li>
-            <li class="active">Kontakta Oss</li>
+            <li class="active">Contact</li>
         </ol>
     </div> <!-- container -->
 </div> <!-- container-fluid  -->
@@ -99,7 +88,7 @@
     <div class="row">
         <div class="col-xs-12 col-sm-8">
             <p>
-                Har ni frågor? Är ni oroliga att er kamera inte mår bra? Funderar ni på att anlita en fotograf men vet inte vem ni ska vända er till? Hör av er till oss, vi svarar gärna (och snabbt!) på era frågor! Ni hittar formuläret här under!
+                Do you have questions? Are you worried that your camera might be cheating with another photographer? Would you like them followed? Don't hesitate, contact us!
             </p>
         </div>
         <div class="hidden-xs col-sm-4">
@@ -107,42 +96,87 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-xs-12 col-sm-7 col-sm-offset-1 col-sm-push-4">
-            <!-- Kontaktformulär -->
-            FORMULÄR
-            <!-- Knapp för att visa formulär här. -->
+        <div class="col-xs-12 col-sm-7 col-sm-offset-1 col-sm-push-3">
+            <div class="hidden-xs">
+            Click the button for our contact form.
+            </div>
+            <a id="formButton" data-toggle="collapse" data-target="#ourForm" class="btn btn-primary"><i class="glyphicon glyphicon-arrow-down"></i></a>
+            <form class="collapse" id="ourForm">
+                <h2>Contact Us</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="first">Name:</label>
+                            <input type="text" class="form-control" placeholder="FirstName LastName" id="first">
+                        </div>
+                    </div>  <!--  col-md-6   -->
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="last">Message:</label>
+                            <input type="text" class="form-control" placeholder="You da bomb!" id="last">
+                        </div>
+                    </div> <!--  col-md-6   -->
+                </div> <!--  row   -->
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="phone">Phone Number:</label>
+                            <input type="tel" class="form-control" id="phone" placeholder="phone">
+                        </div>
+                    </div> <!--  col-md-6   -->
+                </div> <!--  row  -->
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="email">Email address:</label>
+                            <input type="email" class="form-control" id="email" placeholder="email">
+                        </div>
+                    </div> <!--  col-md-6   -->
+                </div> <!--  row   -->
+                <label for="newsletter">Would you like to receive our newsletter?</label>
+                <div class="checkbox">
+                    <label>
+                    <input type="checkbox" value="Sure!" id="newsletter" checked> Sure!
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-primary">
+                    Submit
+                    <span class="glyphicon glyphicon-arrow-right"></span>
+                </button>
+                </form>
         </div>
         <div class="col-xs-12 col-sm-4 col-sm-pull-8">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2181.405335490066!2d14.822591715999737!3d56.85614351382293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465723d923a260eb%3A0x73f67301dacc5346!2zRnJhbXRpZHN2w6RnZW4gMTJBLCAzNTIgNTcgVsOkeGrDtg!5e0!3m2!1sen!2sse!4v1510817385197" width="auto" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <img src="images/map.png" alt="Map to Our Place" class="img-responsive">
         </div>
     </div>
+</div> <!-- container -->
 
-</div>
-
-
-<footer class="col-xs-12">
-    <div class="container">
-        <div class="col-xs-12 col-sm-6 pull-left">
-            <p>
-                <i class="glyphicon glyphicon-user"></i> Framtidsvägen 12A | 352 57 | Växjö
-            </p>
-            <p>
-                <i class="glyphicon glyphicon-phone"></i> 0470-72 33 00
-            </p>
-        </div> <!-- col-xs-12 col-sm-6 pull-left -->
-        <div class="col-xs-12 col-sm-6" align="right">
-            <button class="btn-primary">
-                <i class="fa fa-facebook-square" aria-hidden="true"></i>
-            </button>
-            <button class="btn-danger">
-                <i class="fa fa-pinterest-square" aria-hidden="true"></i>
-            </button>
-            <button class="btn-primary">
-                <i class="fa fa-instagram" aria-hidden="true"></i>
-            </button>
-        </div> <!-- buttons -->
-    </div> <!-- container -->
-</footer>
-
+<!-- Footer -->
+<div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <footer>
+                    <div class="col-xs-12 col-sm-5">
+                        <p><i class="glyphicon glyphicon-user"></i> Framtidsvägen 12A | 352 57 | Växjö</p>
+                        <p><i class="glyphicon glyphicon-phone"></i> 0470-72 33 00</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-2">
+                        <div class="text-center">&copy;</div>
+                    </div>
+                    <div class="col-xs-12 col-sm-5 text-right">
+                        <button class="btn-primary">
+                            <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                        </button>
+                        <button>
+                            <i class="fa fa-pinterest-square" aria-hidden="true"></i>
+                        </button>
+                        <button class="btn-primary">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
