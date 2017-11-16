@@ -98,3 +98,24 @@ footer p{align-content: baseline;}
     border: 1px solid lightgrey;
     padding: 20px;
 }
+.a_card {
+    padding: 20px;
+    margin-top: 28px;
+    text-align: center;
+    border-top: lightgrey solid 1px;
+    border-bottom: lightgrey solid 1px;
+}
+.b_card {
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+    border-top: lightgrey solid 1px;
+    border-bottom: lightgrey solid 1px;
+}
+.c_card {
+    padding: 20px;
+    margin-top: 15px;
+    text-align: center;
+    border-top: lightgrey solid 1px;
+    border-bottom: lightgrey solid 1px;
+}
