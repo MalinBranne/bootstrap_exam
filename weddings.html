@@ -80,21 +80,86 @@
         <div class="col-sm-6 visible-sm  a_card"><!--this col is only visible on sm-screens!-->
             <p class="lead">"Wedding photography is one of the hardest damn jobs in photography. Period. End of story."</p>
         </div>
-        <div class="col-sm-6 visible-xs visible-md a_card"><!--this col is only visible on xs and md-screens!-->
+        <div class="col-sm-6 visible-md a_card"><!--this col is only visible on md-screens!-->
             <p class="lead">"The most challenging thing about photographing weddings is that all that is beautiful is true 
             and all that is true is beautiful. As in the movie ‘Il Gattopardo’ by Luchino Visconti where truth corresponds to beauty."</p>
         </div>
-        <div class="col-sm-6 visible-lg  a_card"><!--this col is only visible on lg-screens!-->
-            <p class="lead">"The most challenging thing about photographing weddings is that all that is beautiful is true 
-            and all that is true is beautiful. As in the movie ‘Il Gattopardo’ by Luchino Visconti where truth corresponds to beauty. 
-            The most challenging thing about photographing weddings is that all that is beautiful is true and all that is true is beautiful. 
-            As in the movie ‘Il Gattopardo’"</p>
+        <div class="col-sm-6 visible-xs visible-lg  a_card"><!--this col is only visible on xs and lg-screens!-->
+            <p class="lead">"The most challenging thing ever about photographing weddings is that all that is beautiful is true 
+            and all that is true is beautiful. As in the famous movie ‘Il Gattopardo’ by Luchino Visconti where the truth corresponds to beauty. 
+            What can I say? Wedding photography is simply one of the hardest damn jobs in photography. Period. End of story."</p>
         </div>
     </div>
 </div>
  
 <!--Tabs-->
-<!--Booking-->
+<div class="container tabs">
+    <ul class="nav nav-tabs">
+        <li class="active"><a href="#Booking" data-toggle="tab">Booking</a></li>
+        <li><a href="#Info" data-toggle="tab">Info</a></li> 
+    </ul>
+    <div class="tab-content">
+        <div class="tab-pane active" id="Booking">
+            <h3 class="tabs_heading">Book A Photo Shoot</h3>
+            <!--Booking Form-->
+            <form class="booking_form">
+                <div class="form-group"><!--form-group makes the input 100% in width-->
+                    <label>Name:</label>
+                    <input type="text" class="form-control"><br>
+                    <label>Email:</label>
+                    <input type="text" class="form-control"><br>
+                    <label>Date:</label>
+                    <input type="date" class="form-control"><br>
+                    <label>Service:</label>
+                    <input type="text" class="form-control">
+                </div>
+            </form>
+            <!--Modal-->            
+            <button type="submit" class="btn btn-default" data-toggle="modal" data-target="#myModal">SUBMIT INFORMATION</button>
+                <div class="modal fade" id="myModal">
+                    <div class="modal-dialog"><!--sets the proper width and margin of the modal-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button><!--&times; creates the 'x'-->
+                                <h4 class="modal-title">Confirmation</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p>Please confirm your booking</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary">Confirm</button>
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div class="tab-pane tab-pane1" id="Info">
+            <h3 class="tabs_heading">Photo Shoot Information</h3>
+            <h4>Location</h4>
+            <p>The photo shoot can be in-studio, outside, or at your home. This is your choice. My personal feeling is that natural light 
+            (outside) is the best choice for beauty and natural skin tones. We will spend two hours together posing and shooting to capture 
+            impressive portraits of you.</p>
+            <h4>Clothing</h4>
+            <p>Plan on three different sets of clothes for the photo shoot.  Choose outfits that you are comfortable wearing and reflect your 
+            personality. You can add depth and beauty to your portrait if you choose an outfit with texture, colors, layers and jewelry.  
+            You can enhance the look with a hat and/or accessories.</p>
+            <h4>Makeup</h4>
+            <p>We do recommend that women wear some makeup for the photo shoot.  My philosophy is that “a little goes a long way”.  
+            Wear enough that you are comfortable with. Do not overdo it. This is your time to look beautiful and create gorgeous images for you, 
+            family and friends. We can hire a professional Hair and Makeup Artist upon your request for an additional fee.</p>        
+            <h4>Photography Style</h4>        
+            <p>We like to photograph in both color and black-and-white formats. In color images, there is a rich spectrum of various colors in 
+            your portrait that will “pop” with brilliance. However, black-and-white images appear timeless and have true value to them that make
+            you want to keep the image forever. During the transformation to black-and-white, the colors from the portrait become subtle shades
+            of gray, brilliant white, and deep black.  It is reduced to pure form and tones, which creates a timeless image.</p>        
+            <h4>Process</h4>
+            <p>Once the session photo shoot has been completed, you can expect a link within two weeks to a private online gallery where you 
+            can view the proofs. There will be approximately 40 proof images. Of these proofs, you will select the best 20 as the final images 
+            for printing.</p>                
+        </div>
+    </div>
+</div>
 
 <!--Footer-->
 <div class="container-fluid">

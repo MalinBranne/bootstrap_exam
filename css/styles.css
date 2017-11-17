@@ -144,3 +144,28 @@ footer p{align-content: baseline;}
     padding: 20px;
     font-family: Merriweather;
 }
+.tabs {
+    margin-top:30px;
+}
+.tabs_heading {
+    font-family: Merriweather;
+    color:#444;
+    margin-top: 30px;
+    border-bottom: lightgrey solid 1px;
+    padding-bottom: 3px;
+	margin-bottom: 20px;
+}
+.tab-pane1 h4 {
+    font-family: Merriweather;
+    color:#444;
+    font-style: italic;
+}
+.tab-pane1 p {
+    font-family: Merriweather;
+    color:#444;
+    margin-bottom: 20px;
+}
+.booking_form {
+    font-family: Merriweather;
+    color:#444;
+}
