@@ -72,12 +72,14 @@ footer p{align-content: baseline;}
 }
 .text {
     padding: 20px;
-    font-size: 15px;
+    font-size: 20px;
     border-top: lightgrey solid 1px;
     border-bottom: lightgrey solid 1px;
-    padding: 20px;
-    margin-top:50px;
-    margin-bottom:50px;
+    margin-top:10px;
+    color:black;
+    font-family: Merriweather;
+    font-style: italic;
+    margin-bottom:20px;
 }
 .posted {
     font-size: small;
@@ -85,7 +87,7 @@ footer p{align-content: baseline;}
     color: grey;
 }
 .quote {
-    font-size: 12px;
+    font-size: 15px;
 }
 .dropdown-menu > .active > a, 
 .dropdown-menu > .active > a:hover, 
@@ -96,7 +98,26 @@ footer p{align-content: baseline;}
 }
 .blog {
     border: 1px solid lightgrey;
-    padding: 20px;
+   /*padding-top: 20px;*/
+    font-family: Merriweather;
+    padding-bottom: 5px;
+}
+.blog h5 {
+    color:grey;
+}
+.blog_content {
+    line-height: 25px;
+    font-family: Merriweather;
+    margin-bottom:20px;
+}
+.comment {
+    font-family: Merriweather;
+    margin-top:20px;
+}
+.comment h4 {
+    font-family: Merriweather;
+    color:#444;
+    margin-bottom: 20px;
 }
 .a_card {
     padding: 20px;
@@ -118,4 +139,8 @@ footer p{align-content: baseline;}
     text-align: center;
     border-top: lightgrey solid 1px;
     border-bottom: lightgrey solid 1px;
+}
+.info {
+    padding: 20px;
+    font-family: Merriweather;
 }
