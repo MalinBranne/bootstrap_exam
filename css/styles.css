@@ -169,3 +169,6 @@ footer p{align-content: baseline;}
     font-family: Merriweather;
     color:#444;
 }
+img {
+    image-rendering: -webkit-optimize-contrast;
+}
