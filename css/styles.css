@@ -28,8 +28,8 @@
 a:hover { color: #A78600;
 text-decoration: none;}
 #index_img {
-    height:70vh;
-    width: 100vh;
+    height:auto;
+    width: 100%;
 }
 img { /*images with hover effect*/
     filter: saturate(15%);
@@ -65,6 +65,9 @@ footer {
     position:relative;
     display:flex;
 }
+
+
+
 .text {
     padding: 20px;
     font-size: 20px;
@@ -163,8 +166,8 @@ img {
 }
 
 
-.navbar-default,
-.panel-heading {
+.navbar-default
+ {
     /* background-color: #f1c40f; */
     background: rgba(241,196,14,1);
     background: -moz-linear-gradient(-45deg, rgba(241,196,14,1) 0%, rgba(255,255,255,1) 100%);
@@ -217,12 +220,18 @@ a {
     text-decoration: none;
     background-color: #FFE167;
 }
+
+
 .dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover {
     color: #524200;
     text-decoration: none;
     background-color: #FFE167;
     outline: 0;
 }
+
 .breadcrumb {
     background-color: #FFFAE8;
 }
+
+.panel-heading
+{  background: rgb(248, 230, 158);}
