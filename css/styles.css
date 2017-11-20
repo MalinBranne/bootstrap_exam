@@ -7,7 +7,6 @@
     letter-spacing: -2px;
     font-weight: bold;
 }
-
 .h2special {
     margin: 0;
     color: #444;
@@ -16,10 +15,7 @@
     letter-spacing: -2px;
     font-weight: bold;
 }
-
 .carousel-caption a {
-
-
     margin: 0;
     color: white;
     padding: 0px 0px 6px 0px;
@@ -28,26 +24,34 @@
     letter-spacing: -2px;
     font-weight: bold;
 }
-
 .navbar-brand a {color: black;}
-
 a:hover { color: lightblue;
 text-decoration: none;}
-
 #index_img {
     height:70vh;
     width: 100vh;
 }
-
-img:hover{
-        filter: saturate(15%)
-    }
+img { /*images with hover effect*/
+    filter: saturate(15%);
+}
+img:hover {
+    filter: saturate(100%);
+}
+.media img, 
+.blogpost img,
+.harold img { /*images with no hover effect*/
+    filter: saturate(100%);
+}
+.media img:hover,
+.blogpost img:hover
+.harold img {
+    filter: saturate(100%);
+}
 .vcenter {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 .index_p{
     border-top: lightgrey solid 1px;
     border-bottom: lightgrey solid 1px;
@@ -60,15 +64,6 @@ footer {
     margin-bottom:10px;
     position:relative;
     display:flex;
-}
-footer p{align-content: baseline;}
-.row {
-    position: relative;
-}
-.align-bottom {
-    position: absolute;
-    bottom: 0;
-    right: 0;
 }
 .text {
     padding: 20px;
@@ -86,7 +81,7 @@ footer p{align-content: baseline;}
     font-style: italic;
     color: grey;
 }
-.quote {
+.quote { /*users comments*/
     font-size: 15px;
 }
 .dropdown-menu > .active > a, 
@@ -96,21 +91,21 @@ footer p{align-content: baseline;}
     outline: 0;
     background-color:grey; /*This does not work!*/
 }
-.blog {
+.blog { /*the whole comment section*/
     border: 1px solid lightgrey;
    /*padding-top: 20px;*/
     font-family: Merriweather;
     padding-bottom: 5px;
 }
-.blog h5 {
+.blog h5 { 
     color:grey;
 }
-.blog_content {
+.blog_content { /*this is the paragraphs in the blog*/
     line-height: 25px;
     font-family: Merriweather;
     margin-bottom:20px;
 }
-.comment {
+.comment { /*leave us a comment*/
     font-family: Merriweather;
     margin-top:20px;
 }
@@ -119,28 +114,22 @@ footer p{align-content: baseline;}
     color:#444;
     margin-bottom: 20px;
 }
-.a_card {
+.a_card, .b_card, .c_card {
     padding: 20px;
-    margin-top: 28px;
     text-align: center;
     border-top: lightgrey solid 1px;
     border-bottom: lightgrey solid 1px;
+}
+.a_card { /*card is for the lead text in the six services they have different margin depending on screen size & image*/
+    margin-top: 28px;
 }
 .b_card {
-    padding: 20px;
     margin-top: 20px;
-    text-align: center;
-    border-top: lightgrey solid 1px;
-    border-bottom: lightgrey solid 1px;
 }
 .c_card {
-    padding: 20px;
     margin-top: 15px;
-    text-align: center;
-    border-top: lightgrey solid 1px;
-    border-bottom: lightgrey solid 1px;
 }
-.info {
+.info { /*blog authors*/
     padding: 20px;
     font-family: Merriweather;
 }
@@ -165,7 +154,7 @@ footer p{align-content: baseline;}
     color:#444;
     margin-bottom: 20px;
 }
-.booking_form {
+.booking_form { /*stylling labels on booking form*/
     font-family: Merriweather;
     color:#444;
 }
