@@ -39,12 +39,12 @@ img:hover {
 }
 .media img, 
 .blogpost img,
-.harold img { /*images with no hover effect*/
+.harold { /*images with no hover effect*/
     filter: saturate(100%);
 }
 .media img:hover,
 .blogpost img:hover
-.harold img {
+.harold {
     filter: saturate(100%);
 }
 .vcenter {
