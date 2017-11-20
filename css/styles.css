@@ -44,7 +44,7 @@ img:hover {
 }
 .media img:hover,
 .blogpost img:hover
-.harold img {
+.harold {
     filter: saturate(100%);
 }
 .vcenter {
@@ -109,10 +109,7 @@ footer {
     margin-bottom: 20px;
 }
 .a_card, .b_card, .c_card, .d_card {
-    padding: 20px;
     text-align: center;
-    border-top: lightgrey solid 1px;
-    border-bottom: lightgrey solid 1px;
 }
 .a_card { /*card is for the lead text in the six services they have different margin depending on screen size & image*/
     margin-top: 28px;
@@ -125,6 +122,12 @@ footer {
 }
 .d_card {
     margin-top:80px;
+}
+.lead {
+    border-top: lightgrey solid 1px;
+    border-bottom: lightgrey solid 1px;
+    padding: 20px;
+    font-family: Merriweather;
 }
 .info { /*blog authors*/
     padding: 20px;
