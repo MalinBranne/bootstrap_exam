@@ -175,8 +175,8 @@ letter-spacing: -2px;
 font-weight: bold;
 }
 #index_img {
-    height:70vh;
-    width: 100vh;
+    height:auto;
+    width: 100%;
 }
 .index_p{
     border-top: lightgrey solid 1px;
