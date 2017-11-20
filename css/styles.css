@@ -108,7 +108,7 @@ footer {
     color:#444;
     margin-bottom: 20px;
 }
-.a_card, .b_card, .c_card, .d_card {
+.a_card, .b_card, .c_card, .d_card, .e_card {
     text-align: center;
 }
 .a_card { /*card is for the lead text in the six services they have different margin depending on screen size & image*/
@@ -223,7 +223,6 @@ a {
     background-color: #FFE167;
     outline: 0;
 }
-
 .breadcrumb {
     background-color: #FFFAE8;
 }
