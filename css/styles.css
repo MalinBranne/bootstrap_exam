@@ -39,7 +39,7 @@ img:hover {
 }
 .media img, 
 .blogpost img,
-.harold img { /*images with no hover effect*/
+.harold { /*images with no hover effect*/
     filter: saturate(100%);
 }
 .media img:hover,
