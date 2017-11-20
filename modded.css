@@ -1,0 +1,38 @@
+.navbar-default {
+    /* background-color: #f1c40f; */
+    background: rgba(241,196,14,1);
+    background: -moz-linear-gradient(-45deg, rgba(241,196,14,1) 0%, rgba(255,255,255,1) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(241,196,14,1)), color-stop(100%, rgba(255,255,255,1)));
+    background: -webkit-linear-gradient(-45deg, rgba(241,196,14,1) 0%, rgba(255,255,255,1) 100%);
+    background: -o-linear-gradient(-45deg, rgba(241,196,14,1) 0%, rgba(255,255,255,1) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(241,196,14,1) 0%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(135deg, rgba(241,196,14,1) 0%, rgba(255,255,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1c40e', endColorstr='#ffffff', GradientType=1 );
+}
+
+
+
+.navbar-default .navbar-nav>li>a { 
+    color: #524200;
+    font-family: "Arial";
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    color: #A78600;
+
+}
+
+.dropdown-menu {
+    background-color: #FFFAE8;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+    color: #524200;
+    background-color: #FFFAE8;
+}
+
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
+    color: #524200;
+    text-decoration: none;
+    background-color: #FFE167;
+}
